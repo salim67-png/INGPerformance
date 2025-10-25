@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ING PERFORMANCE - Nettoyage Voiture à Domicile</title>
+    <style>
+        body { font-family: Arial; margin:0; padding:0; background:#f4f9f4; color:#0b3d91; }
+        header { background:#0b3d91; color:white; padding:20px; text-align:center; }
+        header h1 { margin:0; color:#00c853; }
+        main { padding:20px; max-width:800px; margin:auto; }
+        section { margin-bottom:30px; }
+        h2 { color:#0b3d91; }
+        .tarifs { background:#e0f7fa; padding:15px; border-radius:10px; }
+        form { display:flex; flex-direction:column; gap:10px; background:#e8f5e9; padding:15px; border-radius:10px; }
+        input, textarea, select, button { padding:10px; border-radius:5px; border:1px solid #ccc; font-size:16px; }
+        button { background:#00c853; color:white; border:none; cursor:pointer; }
+        button:hover { background:#009624; }
+        footer { background:#0b3d91; color:white; text-align:center; padding:10px; }
+        a { color:#00c853; text-decoration:none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ING PERFORMANCE</h1>
+        <p>Nettoyage voiture intérieur & polissage phares à domicile</p>
+    </header>
+    <main>
+        <section>
+            <h2>Contact</h2>
+            <p>📞 07 67 58 93 44</p>
+            <p>✉️ <a href="mailto:salim2008b@gmail.com">salim2008b@gmail.com</a></p>
+            <p>📍 Strasbourg et alentours</p>
+        </section>
+        <section class="tarifs">
+            <h2>Tarifs</h2>
+            <ul>
+                <li>Nettoyage intérieur : à partir de 60€ selon l'état</li>
+                <li>Polissage phares : à partir de 40€ selon l'état</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Réserver un rendez-vous</h2>
+            <form action="https://formspree.io/f/xgvpwpqq" method="POST">
+                <input type="text" name="nom" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre e-mail" required>
+                <input type="tel" name="telephone" placeholder="Votre téléphone" required>
+                <select name="service" required>
+                    <option value="">Choisir un service</option>
+                    <option value="Nettoyage intérieur">Nettoyage intérieur</option>
+                    <option value="Polissage phares">Polissage phares</option>
+                    <option value="Les deux">Les deux</option>
+                </select>
+                <input type="date" name="date" required>
+                <textarea name="message" placeholder="Message ou précisions"></textarea>
+                <button type="submit">Envoyer ma demande</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 ING PERFORMANCE - Tous droits réservés
+    </footer>
+</body>
+</html>
